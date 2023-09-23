@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klinik</title>
+    <link rel="icon" href="../img/luffy.jpg">
+    <link rel="stylesheet" href="../model/css/style.css">
+    <link rel="stylesheet" href="../model/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <div class="main-content d-flex">
+        <div class="sidebar" id="side_nav">
+            <div class="header-box px-3 pt-3 pb-4">
+                <h6 class="fx-4"><span class="text-dark"><img src="../img/envelope-open.png" alt=""></span> <img src="../img/tally-1.png" alt=""><span class="text-dark">Klinik Berkah Bermanfaat</span></h6>
+                
+            </div>
+            
+            <ul class="list-unstyled h1-2">
+                <li class=""><a href="" class="text-decoration-none collapse px-3 h1-2 d-block"><img src="../img/apps1.png">Dashboard</a></li>
+                
+                <div class="dropdown">
+                    <button class="btn btn-white dropdown-toggle" type="button" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false"> <img src="../img/folder-minus1.png"> 
+                        Rawat Jalan
+                            </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                    <li><a class="dropdown-item" href="semuastatus.html">Semua Status</a></li>
+                                    <li><a class="dropdown-item" href="Reservasi.html">Reservasi</a></li>
+                                    <li><a class="dropdown-item" href="Registrasi.html">Registrasi</a></li>
+                                </ul>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-white dropdown-toggle" type="button" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false" > <img src="../img/add-folder1.png"> 
+                        Rekam Medis
+                            </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                    <li><a class="dropdown-item" href="">Semua Status</a></li>
+                                    <li><a class="dropdown-item" href="#">Reservasi</a></li>
+                                    <li><a class="dropdown-item" href="#">Registrasi</a></li>
+                                </ul>
+                </div>
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><img src="../img/wallet1.png" alt="">Pembayaran</a></li>
+                <div class="dropdown">
+                    <button class="btn btn-white dropdown-toggle" type="button" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false"> <img src="../img/table1.png"> 
+                        Master Data
+                            </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                    <li><a class="dropdown-item" href="">Data 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Data 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Data 3</a></li>
+                                </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-white dropdown-toggle" type="button" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false"> <img src="../img/calendar-minus.png"> 
+                        Jadwal Dokter
+                            </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                    <li><a class="dropdown-item" href="">Dokter 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Dokter 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Dokter 3</a></li>
+                                </ul>
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><img src="../img/user1.png" alt="">Pasien</a></li>
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><img src="../img/box1.png" alt="">Inventori</a></li>  
+                <div class="dropdown">
+                    <button class="btn btn-white dropdown-toggle" type="button" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false"> <img src="../img/clipboard-list1.png"> 
+                        Closing & Laporan
+                            </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown">
+                                    <li><a class="dropdown-item" href="">Report 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Report 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Report 3</a></li>
+                                </ul>
+                <li class=""><a href="#" class="text-decoration-none px-3 py-2 d-block"><img src="../img/square-code1.png" alt="">Integrasi</a></li>
+            </ul>
+            <hr>
+            <div class="user">
+                <a href="#" class="text-decoration-none"><img src="../img/luffy.jpg" alt=""></a>
+                <span class="text-dark d-none d-sm-inline mx-1">Admin</span>
+            </div>
+            </div>
+    
+            <div class="content">
+                <p>Rawat Jalan > Semua Status</p>
+
+                        
+                        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#modalTambah">
+                            + Reservasi
+                        </button>
+                        
+                    <div class="modal fade" id="modalTambah" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Reservasi</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <form method="post" action="">
+                                <div class="modal-body">
+                                    
+                                        <div class="mb-3">
+                                            <label class="form-label">Pasien Name</label>
+                                            <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama" autocomplete="off" required>
+                                            </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">BPJS Number</label>
+                                            <input type="number" class="form-control" name="bpjs" placeholder="Masukkan Nomor BPJS">
+                                        </div>
+                                </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary" name="submit">Save</button>
+                                    </div>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                <div class="card">
+                    <div class="card-header ">
+                      Pasien
+                    </div>
+
+                    <div class="card-body">
+                        <table class="table table-bordered table-stripped table-hover">
+                            <tr>
+                                <th>Waktu Konsul</th>
+                                <th>Antrian(Slot)</th>
+                                <th>Pasien</th>
+                                <th>Poli</th>
+                                <th>Dokter</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <th>23:00 - 00:30</th>
+                                <th>1</th>
+                                <th>Tony Chopper</th>
+                                <th>Poli Gigi</th>
+                                <th>Monkey D Luffy</th>
+                                <th>Selesai</th>
+                            </tr>
+                        </table>
+                    </div>
+                  </div>
+        </div>
+        
+    <script type="text/javascript" src="../model/js/popper.min.js"></script>
+    <script type="text/javascript" src="../model/js/bootstrap.min.js"></script>
+</body>
+</html>
